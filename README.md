@@ -18,7 +18,7 @@ Get started quickly using [Overleaf](https://www.overleaf.com/latex/templates/so
 
 ```sh
 docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex default.tex
+docker run --rm -i -v "$PWD":/data latex pdflatex resume.tex
 ```
 
 ### Preview
