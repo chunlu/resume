@@ -21,6 +21,13 @@ docker build -t latex .
 docker run --rm -i -v "$PWD":/data latex pdflatex resume.tex
 ```
 
+
+### PDF TO PNG
+```sh
+sudo apt install poppler-utils
+pdftoppm -png <pdf_filename> <image_name_prefix>
+pdftoppm -png resume.pdf preview
+```
 ### Preview
 
 ![Resume Screenshot](/preview.png)
